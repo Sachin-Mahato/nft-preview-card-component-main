@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+/* || Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color1:#8bacda;
+    --primary-color2:#00fff7;
+    --Neutral-color1:#0d192b;
+    --Neutral-color2:#14253d;
+    --Neutral-color3:#2f415b;
+    --Neutral-color4:#ffffff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family:'Outfit','Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: var(--Neutral-color1);
+    color: var(--Neutral-color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+    width: 375px;
+    height: 617px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* border: 4px solid red; */
+    background-color: #14253d;
+    /* padding: 20px; */
+    border-radius:10px ;
+    
+    
+}
+/* || top section */
+.nft {
+height: 55%;
+width: 100%;
+display: flex;
+justify-content: center;
+
+
+}
+
+.nft > img {
+    max-height: 100%;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* || Middle section */
+
+.nft-details {
+    color: var(--primary-color1);
+    margin-top: 25px;
+    height: 25%;
+    margin-left: 45px;
+    
+}
+
+.nft-details > h3 {
+    color: var(--Neutral-color4);
+    margin-bottom: 15px;
+}
+
+.nft-time {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color2);
+    margin-top: 15px;
+}
+.nft-time div:nth-child(odd) {
+    font-weight:600;
+}
+.nft-time div:nth-child(even){
+    color: var(--primary-color1);
+}
+
+
+.ethereum-icon{
+ display: flex;   
+}
+.time-img {
+    display: flex;
+    margin-right: 30px;
+}
+
+/* || buttom section */
+.bottom-section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: var(--primary-color1);
+    margin: 0 30px;
+    border-top: 1px solid var(--primary-color1);
+    gap: 15px;
+}
+.bottom-section > img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--Neutral-color4);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.bottom-section > figcaption {
+    margin-top: 35px;
+}
+
+.bottom-section >figcaption > span {
+    color: var(--Neutral-color4);
+    
+}
+
+/* || Big Screen */
+
+@media screen and (min-width:1440px){
+    .container {
+        width: 20vw;
+        height: 70vh;
+    }
+
+    .nft {
+        height: 50%;
+    }
+    .nft-details {
+        height: 25%;
+        margin-bottom: 15px;
+    }
+    .bottom-section {
+        margin-top: 30px;
+    }
+    .bottom-section > img {
+        margin-top: 15px;
+        width: 32px;
+        height: 32px;
+    }
+    .bottom-section > figcaption {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+}
